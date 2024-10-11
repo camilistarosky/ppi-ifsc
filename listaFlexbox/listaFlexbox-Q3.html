@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container {
+            width: 300px;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .pessoa {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .foto img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .pessoa-infos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nome {
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .endereco {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pessoa">
+            <div class="foto">
+                <img src="maça.jfif" alt="maça">
+            </div>
+            <div class="pessoa-infos">
+                <div class="nome">Maça Vermelha</div>
+                <div class="endereco">354 Árvore Espinhosa</div>
+            </div>
+        </div>
+
+        <div class="pessoa">
+            <div class="foto">
+                <img src="abacaxi.jfif" alt="abacaxi">
+            </div>
+            <div class="pessoa-infos">
+                <div class="nome">Abacaxi Cortado Fresco</div>
+                <div class="endereco">123 Madureira da perna curta</div>
+            </div>
+        </div>
+
+        <div class="pessoa">
+            <div class="foto">
+                <img src="laranja.jfif" alt="laranja">
+            </div>
+            <div class="pessoa-infos">
+                <div class="nome">Laranja Amarelo Silveira</div>
+                <div class="endereco">854 Pé de Muleke Roxo</div>
+            </div>
+        </div>
+
+        <div class="pessoa">
+            <div class="foto">
+                <img src="abacate.jfif" alt="abacate">
+            </div>
+            <div class="pessoa-infos">
+                <div class="nome">Abacate Vocado Vermelho</div>
+                <div class="endereco">897 Rua Verde Abacate Sapeca</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

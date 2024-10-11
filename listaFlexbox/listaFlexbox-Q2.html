@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Reconstruído</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        .container {
+            width: 300px;
+            height: 500px;
+            border: 2px solid rgb(92, 149, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(228, 238, 255);
+            border-radius: 30px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 50px;
+            background-color: rgba(0, 25, 168, 0.445);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            border: 2px solid rgb(92, 149, 255);
+            border-radius: 15px;
+            color: white;
+        }
+
+        .caixa {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(233, 237, 245);
+            margin: 10px 0;
+            border: 2px solid rgb(92, 149, 255);
+            border-radius: 20px;
+        }
+
+        .circulo {
+            width: 60px;
+            height: 60px;
+            background-color:  rgba(0, 25, 168, 0.445);
+            border-radius: 50%;
+            border: 2px solid rgb(92, 149, 255);
+            background-image: url(/listaFlexbox/amora.png);
+        }
+
+        .button {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(25, 0, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            border: 2px solid rgb(92, 149, 255);
+            border-radius: 20px;
+
+        }
+        #imagem{
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">Company Logo</div>
+        <div class="caixa"></div>
+        <div class="caixa"></div>
+        <div class="caixa"></div>
+        <div class="caixa"></div>
+        <div class="circulo">
+            <img id="imagem" src="amora.png" alt="amora">
+        </div>
+        <div class="button"></div>
+    </div>
+
+</body>
+
+</html>
