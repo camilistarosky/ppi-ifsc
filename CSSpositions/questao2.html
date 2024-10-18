@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Coloridos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            height: 100vh;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            text-align: center;
+
+        }
+
+        #elemento1 {
+            background-color: #ff6347;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+
+        #elemento2 {
+            background-color: #4682b4;
+            top: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        #elemento3 {
+            background-color: #32cd32;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+        }
+
+        #elemento4 {
+            background-color: #ffa500;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .box-centro {
+            background-color: #9370db;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="elemento1">Esquerda em cima</div>
+    <div class="box" id="elemento2">Direita em cima</div>
+    <div class="box" id="elemento3">Esquerda em baixo</div>
+    <div class="box" id="elemento4">Direita em cima</div>
+    <div class="box-centro">CENTRO</div>
+</body>
+
+</html>
