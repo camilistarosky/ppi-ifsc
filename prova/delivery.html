@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Picolé</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(245, 155, 236);
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            padding: 10px;
+            min-height: 100vh;
+            grid-template-areas:
+                "titulo titulo titulo titulo titulo"
+                "menu banner banner banner lateral"
+                "menu meio meio meio chat"
+                "menu meio meio meio chat"
+                "menu final final final chat"
+                "rodape rodape rodape rodape rodape";
+        }
+
+        .box {
+            padding: 10px;
+            font-size: 1em;
+            text-align: left;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3, h4, p {
+            color: rgb(214, 8, 128);
+        }
+
+        #titulo {
+            margin-top: 30px;
+            text-align: center;
+            grid-area: titulo;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #boxbanner {
+            grid-area: banner;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #boxmenu {
+            grid-area: menu;
+            background-color: rgb(249, 215, 253);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #boxMeio {
+            grid-area: meio;
+            background-color: rgb(249, 215, 253);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #boxlateral {
+            grid-area: lateral;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #chat {
+            grid-area: chat;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+
+        #boxFim {
+            grid-area: final;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #boxRodape {
+            grid-area: rodape;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #picole {
+            width: 400px;
+            height: 200px;
+        }
+
+        #botao{
+            background-color: rgb(255, 137, 208);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="titulo">
+            <h1>PicoléDelicia - Delivery de Picolés</h1>
+        </div>
+        <div class="box" id="boxbanner">
+            <h2>Picolés deliciosos</h2>
+            <img src="picole.jfif" alt="picoles" id="picole">
+        </div>
+        <div class="box" id="boxmenu">
+            <h1>Menu</h1>
+            <p>Sabores</p>
+            <p>Regiões de entrega</p>
+            <p>Sobre Nós</p>
+            <p>Encomendas</p>
+        </div>
+        <div class="box" id="boxMeio">
+            <div>
+                <h2>Entregas para as regiões:</h2>
+                <ol>
+                    <li>Blumenau</li>
+                    <li>Gaspar</li>
+                    <li>Ilhota</li>
+                    <li>Indaial</li>
+                </ol>
+            </div>
+        </div>
+        <div class="box" id="boxFim">
+            <p>Picoles feito de forma artesanal em Blumenau</p>
+        </div>
+        <div class="box" id="boxlateral">
+            <h3>
+                Temos todos os sabores!
+            </h3>
+            <ol start="a">
+                <li>Morango</li>
+                <li>Laranja</li>
+                <li>Maracujá</li>
+                <li>Amora</li>
+                <li>Coco</li>
+                <li>Chocolate</li>
+            </ol>
+
+        </div>
+        <div class="box" id="chat">
+            <h2>Atendente CHAT</h2>
+            <p>Digite seu nome:</p>
+            <input type="text" name="name">
+            <p>Digite seu telefone:</p>
+            <input type="number" name="" id="telefone">
+            <input type="button" id="botao" value="enviar">
+        </div>
+        <div class="box" id="boxRodape">
+            <h2>Peça já a sua delícia</h2>
+            <h3>Entre em contato! (47) 9 9184-9851</h3>
+        </div>
+    </div>
+</body>
+
+</html>
