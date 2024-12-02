@@ -7,12 +7,13 @@
 </head>
 <body>
     <?php
-        function echo hello(){
+        function echohello(){
             $hello = "OLA MUNDO";
             echo $hello;
         }
     ?>
-
-    <p><?php hello(); ?></p>
+    
+    <p><?php
+    echohello(); ?></p>
 </body>
 </html>
