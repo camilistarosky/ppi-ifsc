@@ -1,4 +1,4 @@
-<?php
+    <?php
 /*função que conecta com o banco de dados e retorna a conexão com banco ou false */
 
 function conectDb() {
@@ -30,6 +30,6 @@ function check_conn($conn_id): void{
 }
 }
 var_dump(conectDb());
-check_conn( conectDb());
+check_conn(conectDb());
 
  ?>
