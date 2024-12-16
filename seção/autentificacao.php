@@ -2,7 +2,7 @@
     session_start();
     
     if( !isset($_POST["login"]) || !isset($_POST["senha"])) {
-        header("Location: login.php");
+        header("Location: login.php?erro=1");
         exit();
     }
 

@@ -20,14 +20,20 @@
 </head>
 <body>
     <fieldset>
+        <legend>Login</legend>
         <?php 
         // mostra o erro
              if (isset($_GET["erro"]) && $_GET["erro"]==2){  ?>
 
-                <p> Erro login ou senha errados </p>
+                <p> Erro 2: login ou senha errados </p>
         <?php         
-            }
+              } else if (isset($_GET["erro"]) && $_GET["erro"]==2){  ?>
+
+                <p> Erro 2: login ou senha errados </p>
+        <?php         
+            } 
         ?>
+
         <form action="autentificacao.php" method="post">
             <label for="login">Login</label>
         <input type="text" name="login" id="login">
