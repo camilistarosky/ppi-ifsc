@@ -1,5 +1,5 @@
 USE provacami;
-
+CREATE DATABASE IF NOT EXISTS provacami;
 CREATE TABLE pessoas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
